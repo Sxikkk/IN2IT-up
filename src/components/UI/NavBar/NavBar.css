@@ -1,0 +1,17 @@
+.link{
+    text-decoration: none;
+    color: #404545;
+    transition: 0.3s;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+}
+
+.link:hover{
+    transition: 0.1s ease-out;
+    transform: scale(1.1) translateY(-5px);
+}

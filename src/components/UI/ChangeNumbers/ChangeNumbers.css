@@ -1,0 +1,16 @@
+.change-numbers {
+    font-family: montserrat, sans-serif;
+    display: flex;
+    gap: 1rem;
+    max-height: 500px;
+    div{
+        transition: 1.5s ease-in-out;
+        h1{
+            transform: translateY(-550px);
+            text-align: center;
+            font-size: 540px;
+            color: rgba(64, 69, 69, 0.13);
+            font-weight: normal ;
+        }
+    }
+}
