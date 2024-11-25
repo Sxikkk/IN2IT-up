@@ -18,8 +18,9 @@ p, a, label {
 }
 
 .container{
-  max-width: 1200px;
   display: flex;
+  width: 80%;
+
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;

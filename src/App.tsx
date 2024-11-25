@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import {BrowserRouter} from "react-router-dom";
 import {routes} from "./router";
 import AppRouter from "./components/AppRouter";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
             <BrowserRouter>
                 <Header />
                 <AppRouter links={routes}/>
+                <Footer />
             </BrowserRouter>
         </div>
     </div>

@@ -1,0 +1,15 @@
+footer{
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem;
+    background: #EFF0F5;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    .f-top{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
