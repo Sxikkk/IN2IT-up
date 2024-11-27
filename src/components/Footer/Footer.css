@@ -13,3 +13,23 @@ footer{
         justify-content: space-between;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    footer{
+        .f-top{
+            gap: 1rem;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    footer{
+        .f-top{
+            align-items: start;
+            nav{
+                flex-direction: column;
+            }
+        }
+    }
+}

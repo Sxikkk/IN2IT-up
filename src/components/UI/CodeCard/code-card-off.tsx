@@ -14,7 +14,9 @@ const CodeCardO: FC<IProps> = ({name, about, price, firstColor, secondColor}) =>
     return (
         <div
             className="code-card"
-            style={{background: `linear-gradient(#${firstColor}, #${secondColor})`}}
+            style={{background: `linear-gradient(#${firstColor}, #${secondColor})`,
+                width: '100%'
+            }}
         >
             <div className="l-cc">
                 <h1>{name}</h1>

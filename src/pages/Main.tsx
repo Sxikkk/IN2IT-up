@@ -7,6 +7,7 @@ import CardList from "../components/CardList";
 import GridItems from "../components/Grid";
 import {IGrodItem} from "../assets/data";
 import OCard from "../components/OCard";
+import {useNavigate} from "react-router";
 
 const Main = () => {
     const s = '100101001101010101011010101001010101010101010100101010'
@@ -17,6 +18,7 @@ const Main = () => {
         {title: 'Обучение по принципу STEM', body: 'Индивидуальные консультации с преподавателями'},
     ]
 
+    const navigate = useNavigate();
 
     return (
         <>
@@ -27,7 +29,7 @@ const Main = () => {
                     <div className="offer">
                         <h1>Самый легкий путь в IT вместе с нами!</h1>
                         <p>Мы предоставляем множество качественных курсов, без лишних слов и воды</p>
-                        <Button defaultValue="Посмотреть"></Button>
+                        <Button defaultValue="Посмотреть" onClick={() => navigate('/curses')}></Button>
                     </div>
                 </div>
                 <Scroll dir={direction.RIGHT} content={s}/>
@@ -56,7 +58,7 @@ const Main = () => {
                 <h1 style={{
                     color: 'white',
                 }}>НАС ВЫБИРАЮТ, ВЫБЕРИ И ТЫ!</h1>
-                <button className='ava'>Записаться на курс</button>
+                <button className='ava' onClick={() => navigate('/curses')}>Записаться на курс</button>
             </article>
         </>
     );

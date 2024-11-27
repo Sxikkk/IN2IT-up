@@ -14,3 +14,10 @@ export interface IGrodItem {
     body:string;
     imgSrc?: OverridableComponent<SvgIconTypeMap>;
 }
+
+export interface CardProps {
+    types: string[];
+    name: string;
+    about: string;
+    age: string;
+}

@@ -9,7 +9,7 @@ interface Props {
 
 const NavBar: FC<Props> = ({Links}) => {
     return (
-        <nav>
+        <nav className='navbar'>
             {Links.map(link => (
                 <Link className='link' to={link.path}>{link.name}</Link>
                 ))
